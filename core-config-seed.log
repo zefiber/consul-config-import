@@ -1,0 +1,18 @@
+2018-05-02 13:20:42.728  INFO 18116 --- [main] c.p.harmony.ConfigSeedApplication        : Starting ConfigSeedApplication on W470-171 with PID 18116 (C:\dev\workspace\workspace12\SOP\harmony-core-config-seed\target\classes started by wangz in C:\dev\workspace\workspace12\SOP\harmony-core-config-seed)
+2018-05-02 13:20:42.733  INFO 18116 --- [main] c.p.harmony.ConfigSeedApplication        : No active profile set, falling back to default profiles: default
+2018-05-02 13:20:43.678  INFO 18116 --- [main] c.p.harmony.ConfigSeedApplication        : Connecting to Consul at %s: %d
+2018-05-02 13:20:43.679  INFO 18116 --- [main] c.p.harmony.ConfigSeedApplication        : Attempting to get consul connection.
+2018-05-02 13:20:44.198  INFO 18116 --- [main] c.p.harmony.ConfigSeedApplication        : %s exists! The configuration data has been initialized.
+2018-05-02 13:20:44.200  INFO 18116 --- [main] c.p.harmony.ConfigSeedApplication        : Started ConfigSeedApplication in 1.964 seconds (JVM running for 4.828)
+2018-05-02 13:51:53.457  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : Starting ConfigSeedApplication on W470-171 with PID 11928 (C:\dev\workspace\workspace12\SOP\harmony-core-config-seed\target\classes started by wangz in C:\dev\workspace\workspace12\SOP\harmony-core-config-seed)
+2018-05-02 13:51:53.464  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : No active profile set, falling back to default profiles: default
+2018-05-02 13:51:54.510  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : Connecting to Consul at %s: %d
+2018-05-02 13:51:54.514  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : Attempting to get consul connection.
+2018-05-02 13:51:55.104  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : %s doesn't exist! Start importing configuration data.
+2018-05-02 13:51:55.115  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : found config file: empi.properties in context dev
+2018-05-02 13:51:55.228  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : found config file: iam.properties in context dev
+2018-05-02 13:51:55.298  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : found config file: empi.properties in context prd
+2018-05-02 13:51:55.383  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : found config file: iam.properties in context prd
+2018-05-02 13:51:55.515  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : found config file: empi.properties in context qa
+2018-05-02 13:51:55.590  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : found config file: iam.properties in context qa
+2018-05-02 13:51:55.678  INFO 11928 --- [main] c.p.harmony.ConfigSeedApplication        : Started ConfigSeedApplication in 2.861 seconds (JVM running for 6.636)

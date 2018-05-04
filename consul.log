@@ -1,0 +1,61 @@
+Attaching to sop_consul
+[36msop_consul        |[0m BootstrapExpect is set to 1; this is the same as Bootstrap mode.
+[36msop_consul        |[0m bootstrap = true: do not enable unless necessary
+[36msop_consul        |[0m ==> Starting Consul agent...
+[36msop_consul        |[0m ==> Consul agent running!
+[36msop_consul        |[0m            Version: 'v1.0.7'
+[36msop_consul        |[0m            Node ID: 'eb0ad0f4-0259-d33b-7cd9-d0189135bac9'
+[36msop_consul        |[0m          Node name: 'consul-server'
+[36msop_consul        |[0m         Datacenter: 'dc1' (Segment: '<all>')
+[36msop_consul        |[0m             Server: true (Bootstrap: true)
+[36msop_consul        |[0m        Client Addr: [0.0.0.0] (HTTP: 8500, HTTPS: -1, DNS: 8600)
+[36msop_consul        |[0m       Cluster Addr: 172.21.0.2 (LAN: 8301, WAN: 8302)
+[36msop_consul        |[0m            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false
+[36msop_consul        |[0m 
+[36msop_consul        |[0m ==> Log data will now stream in as it occurs:
+[36msop_consul        |[0m 
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] raft: Initial configuration (index=1): [{Suffrage:Voter ID:eb0ad0f4-0259-d33b-7cd9-d0189135bac9 Address:172.21.0.2:8300}]
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] serf: EventMemberJoin: consul-server.dc1 172.21.0.2
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] raft: Node at 172.21.0.2:8300 [Follower] entering Follower state (Leader: "")
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] serf: EventMemberJoin: consul-server 172.21.0.2
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] agent: Started DNS server 0.0.0.0:8600 (udp)
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] consul: Adding LAN server consul-server (Addr: tcp/172.21.0.2:8300) (DC: dc1)
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] consul: Handled member-join event for server "consul-server.dc1" in area "wan"
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] agent: Started DNS server 0.0.0.0:8600 (tcp)
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] agent: Started HTTP server on [::]:8500 (tcp)
+[36msop_consul        |[0m     2018/05/02 17:51:43 [INFO] agent: started state syncer
+[36msop_consul        |[0m     2018/05/02 17:51:49 [WARN] raft: Heartbeat timeout from "" reached, starting election
+[36msop_consul        |[0m     2018/05/02 17:51:49 [INFO] raft: Node at 172.21.0.2:8300 [Candidate] entering Candidate state in term 2
+[36msop_consul        |[0m     2018/05/02 17:51:49 [INFO] raft: Election won. Tally: 1
+[36msop_consul        |[0m     2018/05/02 17:51:49 [INFO] raft: Node at 172.21.0.2:8300 [Leader] entering Leader state
+[36msop_consul        |[0m     2018/05/02 17:51:49 [INFO] consul: cluster leadership acquired
+[36msop_consul        |[0m     2018/05/02 17:51:49 [INFO] consul: New leader elected: consul-server
+[36msop_consul        |[0m     2018/05/02 17:51:49 [INFO] consul: member 'consul-server' joined, marking health alive
+[36msop_consul        |[0m     2018/05/02 17:51:50 [INFO] agent: Synced node info
+[36msop_consul        |[0m BootstrapExpect is set to 1; this is the same as Bootstrap mode.
+[36msop_consul        |[0m ==> Starting Consul agent...
+[36msop_consul        |[0m bootstrap = true: do not enable unless necessary
+[36msop_consul        |[0m ==> Consul agent running!
+[36msop_consul        |[0m            Version: 'v1.0.7'
+[36msop_consul        |[0m            Node ID: 'eb0ad0f4-0259-d33b-7cd9-d0189135bac9'
+[36msop_consul        |[0m          Node name: 'consul-server'
+[36msop_consul        |[0m         Datacenter: 'dc1' (Segment: '<all>')
+[36msop_consul        |[0m             Server: true (Bootstrap: true)
+[36msop_consul        |[0m        Client Addr: [0.0.0.0] (HTTP: 8500, HTTPS: -1, DNS: 8600)
+[36msop_consul        |[0m       Cluster Addr: 172.21.0.2 (LAN: 8301, WAN: 8302)
+[36msop_consul        |[0m            Encrypt: Gossip: false, TLS-Outgoing: false, TLS-Incoming: false
+[36msop_consul        |[0m 
+[36msop_consul        |[0m ==> Log data will now stream in as it occurs:
+[36msop_consul        |[0m 
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] raft: Initial configuration (index=1): [{Suffrage:Voter ID:eb0ad0f4-0259-d33b-7cd9-d0189135bac9 Address:172.21.0.2:8300}]
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] serf: EventMemberJoin: consul-server.dc1 172.21.0.2
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] serf: EventMemberJoin: consul-server 172.21.0.2
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] agent: Started DNS server 0.0.0.0:8600 (udp)
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] raft: Node at 172.21.0.2:8300 [Follower] entering Follower state (Leader: "")
+[36msop_consul        |[0m     2018/05/04 14:41:53 [WARN] serf: Failed to re-join any previously known node
+[36msop_consul        |[0m     2018/05/04 14:41:53 [WARN] serf: Failed to re-join any previously known node
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] consul: Adding LAN server consul-server (Addr: tcp/172.21.0.2:8300) (DC: dc1)
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] consul: Handled member-join event for server "consul-server.dc1" in area "wan"
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] agent: Started DNS server 0.0.0.0:8600 (tcp)
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] agent: Started HTTP server on [::]:8500 (tcp)
+[36msop_consul        |[0m     2018/05/04 14:41:53 [INFO] agent: started state syncer

@@ -1,0 +1,55 @@
+version: '3'
+
+services:   
+
+  consul:
+    container_name: sop_consul
+    image: consul
+    hostname: "consul-server"
+    ports:
+      - "8400:8400"
+      - "8500:8500"
+      - "8600:8600"
+    command: "agent -server -bootstrap-expect 1 -ui -disable-host-node-id -client 0.0.0.0"
+    volumes:
+      - consul_data:/consul/data
+
+  mysql:
+    container_name: sop_mysql
+    restart: always
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root' # TODO: Change this
+      MYSQL_USER: 'root'
+      MYSQL_PASS: 'root'
+      MYSQL_DATABASE: 'empi'
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+      
+  springdocker:
+    container_name: sop_springdocker
+    image: springdocker
+    depends_on:
+      - consul
+      - mysql
+    ports:
+      - "9090:9090"
+      - "5005:5005"
+    environment:
+      JVM_ARGUMENTS: "-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005"
+  
+  coreconfigseed:
+    container_name: sop_coreconfigseed
+    image: harmony-core-config-seed
+    depends_on:
+      - consul
+    ports:
+      - "9092:9092"
+
+  # other services
+  
+volumes:
+  db_data:
+  consul_data:
