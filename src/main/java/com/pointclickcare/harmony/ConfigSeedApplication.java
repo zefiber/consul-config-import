@@ -91,7 +91,8 @@ public class ConfigSeedApplication implements CommandLineRunner
       {
         kvClient.deleteKeys(globalPrefix);
       }
-      else if (!isConfigInitialized(kvClient))
+
+      if (!isConfigInitialized(kvClient))
       {
         loadConfigFromPath(kvClient);
       }
